@@ -1,0 +1,30 @@
+<view>
+<swiper class = "bannerBox" indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+    catchtap='onSwiperItemClick'
+    circular='false' previous-margin="60rpx" next-margin="60rpx"
+>
+    <block wx:for="{{imgUrls}}" >
+        <swiper-item>
+          <view style='display: flex;flex-direction: column;'>
+            <image class='banner' mode='scaleToFill' data-index='{{item.index}}' data-id='{{item.id}}' src="{{item.url}}"  />
+          </view> 
+        </swiper-item>
+    </block>
+</swiper>
+  
+
+  <view class='grids-box'>
+    <view class='grids-main' wx:for="{{items}}"  wx:for-index="index" >
+     <image class='image-head' mode="aspectFill" src='{{item.img}}' data-url="{{item.img}}" bindtap='onItemClick'></image>
+    </view>
+  </view>
+  
+
+  <button hidden="{{loadmorehidden}}" type="primary" class="loadmore" size="default" loading="{{loading}}" plain="{{plain}}" bindtap="loadMore"> 
+  点击加载更多 
+  </button>
+
+</view>

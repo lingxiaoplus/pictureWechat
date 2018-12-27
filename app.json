@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/home",
+    "pages/index/hot",
+    "pages/image/image",
+    "pages/logs/logs",
+    "pages/category/category",
+    "pages/category/categorydetail",
+    "pages/index/index",
+    "pages/special/special"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#66BB6A",
+    "navigationBarTitleText": "图次元",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#66BB6A",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/home",
+        "text": "首页",
+        "iconPath": "images/home_default.png",
+        "selectedIconPath": "images/home_press.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "images/category_default.png",
+        "selectedIconPath": "images/category_press.png"
+      },
+      {
+        "pagePath": "pages/index/hot",
+        "text": "最新",
+        "iconPath": "images/new_default.png",
+        "selectedIconPath": "images/new_press.png"
+      },
+      {
+        "pagePath": "pages/special/special",
+        "text": "专辑",
+        "iconPath": "images/special_default.png",
+        "selectedIconPath": "images/special_press.png"
+      }
+    ]
+  }
+}

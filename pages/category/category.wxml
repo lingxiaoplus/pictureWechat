@@ -1,0 +1,11 @@
+<!--pages/category/category.wxml-->
+<view class='grids-box'>
+        <view class='grids-main' wx:for="{{categoryList}}"  wx:for-index="index">
+        <view class='grids-items' bindtap='onImageClick' data-id='{{index}}' wx:key="id" >
+          <view class="image-items-normal" >
+            <image class='image-head' src='{{item.cover}}' ></image>
+            <text class='text-item'>{{item.name}}</text>
+          </view>
+        </view>
+      </view>
+</view>

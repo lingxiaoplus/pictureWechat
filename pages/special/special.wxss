@@ -1,0 +1,60 @@
+/* pages/special/special.wxss */ 
+.card {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 1px #cccccc;
+    margin: 8px;
+    position: relative;
+}
+.image{
+  width:320rpx;
+  height:240rpx; 
+  margin: 10rpx;
+}
+
+.title-item {
+    padding: 5rpx;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.between{
+  width: 100%;
+  height: 2rpx;
+  background-color: #66BB6A;
+}
+.top-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.title-text{
+  font-size: 16px;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  padding-bottom: 15rpx;
+}
+.desc-text{
+  display: -webkit-box;      /*定义为自适应布局  */  
+  word-break: break-all;
+  text-overflow: ellipsis;  /*超出文字用省略号代替*/
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  overflow: hidden;        /*多出不分隐藏*/
+  -webkit-box-orient: vertical;    /*竖直方向的超出和隐藏*/
+  -webkit-line-clamp: 3;    /*设定行数为2*/
+  font-size: 14px;
+  color: #666;
+}
+.desc-time{
+  font-size: 14px;
+  color: #666;
+  right: 0;
+  position: absolute;
+  margin-right: 20rpx;
+}
+.header-image{
+  width: 40rpx;
+  height: 40rpx;
+}

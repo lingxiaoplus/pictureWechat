@@ -1,0 +1,18 @@
+<!--pages/special/special.wxml-->
+  <view class= "card" wx:for = "{{imageInfo}}">
+    <view data-id="{{item.id}}" bindtap = "onItemClick">
+      <view class='top-item'>
+        <image class= "image" mode="aspectFill" src="{{item.cover}}"/>
+        <view class="title-item">
+          <text class='title-text'>{{item.name}}</text>
+          <text class='desc-text'>{{item.desc}}</text>
+        </view>
+      </view>
+      <image class='between'></image>
+      <view class='top-item'>
+        <image class='header-image' src="{{item.user.avatar}}"></image>
+        <text class='desc-text'>{{item.user.name}}</text>
+        <text class='desc-time'>{{item.atime}}</text>
+      </view>
+    </view>
+  </view>

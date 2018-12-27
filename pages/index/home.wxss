@@ -1,0 +1,101 @@
+.card {
+    border: 2rpx solid #ffffff;
+    border-radius: 8rpx;
+    background-color: #ffffff;
+    box-shadow: 0rpx 8rpx 15rpx rgba(179,154,139,1);
+    margin: 15rpx;
+    position: relative;
+}
+.loadmore {
+    border: 0px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 1px #cccccc;
+    margin: 8px;
+}
+.title {
+    padding: 14px;
+    font-size: 14px;
+}
+.slideImage {
+    width: 100%;
+    height: 100%;
+}
+.image-head{
+  width: 100%;
+  height: 260rpx;
+  bottom: 0rpx;
+  margin: auto;
+  transform: scale(0.98,0.95);  /* 因为非主图看不清，所以可以变形处理 */
+  border-radius: 8rpx;
+  box-shadow: 0px 6rpx 10rpx 0rpx rgba(179,154,139,1);
+}
+.grids-main{
+  position: relative;  
+  width: 47.5%;  
+  background-color: #fff;  
+  float: left;
+  border: 2rpx solid #ffffff;
+  border-radius: 3rpx;
+  box-shadow: 0rpx 5rpx 1rpx #ffffff;
+}
+
+.text-item{
+  font-size: 30rpx;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10rpx;
+}
+
+
+
+.bannerBox{
+    height: 520rpx;
+}
+.banner{
+    overflow: hidden;
+    height: 488rpx;
+    transition: transform 500ms;
+    transform: scale(0.95,0.9);  /* 因为非主图看不清，所以可以变形处理 */
+    border-radius: 8px;
+    box-shadow: 0rpx 6px 10rpx 0rpx rgba(179,154,139,1);
+}
+.banner.active{
+    transform: scale(1,1);
+}
+.bannerDots{
+    width: 100%;
+    left: 0;
+    bottom: 40px;
+    height: 6px;
+}
+.dot{
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.bannerBox .wx-swiper-dots.wx-swiper-dots-horizontal{
+     margin-bottom: 2rpx;
+}
+.bannerBox .wx-swiper-dot{
+    width:40rpx;
+    display: inline-flex;
+    height: 10rpx;
+    margin-left: 20rpx;
+    justify-content:space-between;
+}
+.bannerBox .wx-swiper-dot::before{
+    content: '';
+    flex-grow: 1; 
+    /* background: rgba(255,255,255,0.8); */
+    background: #9E9E9E;
+    border-radius: 8rpx;
+}
+.bannerBox .wx-swiper-dot-active::before{
+    width: 15px;
+    background-color: #03A9F4;
+}
